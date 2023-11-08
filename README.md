@@ -34,4 +34,12 @@ Aplicacion React Native con Expo para dispositivos móviles multiplataforma.
     "react-native-web": "^0.19.9",
     "react-redux": "^8.1.3"
 
-> npm expo start --> para ejecutar la aplicacion a traves de Expo Go y montar el servidor local.
+> npm expo start // yarn star --> para ejecutar la aplicacion a traves de Expo Go y montar el servidor local.
+
+- No se utiliza environment (.env) por motivos didácticos y de prueba todas las credenciales estan expuestas publicamente para prueba.
+- Se cotinua utilizando los set de datos de prueba provistos pero de manera online desde firebase.
+- Se deben simular de manera forzada muchas interfases por no tener un backend funcional o API propio (Fontenf + Backend sin division marcada).
+
+** Simulación: Android Studio en API 34 con dispositivo 1080x2400 - 420dpi (Pixel 7) **
+** Terminal de prueba física: Motorola G-52 Android 12 Compilación S1SRS32.38-132-15 **
+

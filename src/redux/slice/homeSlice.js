@@ -12,6 +12,7 @@ const obtenerProductos = () => {
       if (snapshot.exists()) {
         // La consulta fue exitosa, snapshot contiene los datos de los productos
         const productosData = snapshot.val();
+        console.log('PRODUCTOS *** PRODUCTOS *** PRODUCTOS *** PRODUCTOS *** PRODUCTOS *** PRODUCTOS *** PRODUCTOS *** ');
         console.log('Productos:', productosData);
         return productosData;
       } else {
@@ -25,14 +26,15 @@ const obtenerProductos = () => {
 };
 
 const obtenerCategorias = () => {
-  const categoriasRef = ref(db, 'products');
+  const categoriasRef = ref(db, 'categories');
 
   get(categoriasRef)
     .then((snapshot) => {
       if (snapshot.exists()) {
         // La consulta fue exitosa, snapshot contiene los datos de los productos
         const categoriasData = snapshot.val();
-        console.log('Productos:', categoriasData);
+        console.log('CATEGORIAS *** CATEGORIAS *** CATEGORIAS *** CATEGORIAS *** CATEGORIAS *** CATEGORIAS *** CATEGORIAS *** ');
+        console.log('Categorias:', categoriasData);
         return categoriasData;
       } else {
         console.log('No se encontraron productos.');
