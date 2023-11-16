@@ -10,7 +10,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import RootNavigation from "./RootNavigation";
 import Profile from "../screens/Profile";
 
-import { colors } from "../../assets/paletaColores";
+import { colors } from "../theme/colors";
 import ProfileNav from "./ProfileNav";
 
 const Tab = createBottomTabNavigator();

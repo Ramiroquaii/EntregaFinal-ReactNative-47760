@@ -1,6 +1,13 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Pressable } from "react-native";
-import { colors } from "../../assets/paletaColores";
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  StyleSheet,
+  Pressable,
+} from "react-native";
+import { colors } from "../theme/colors";
 import { firebase_auth } from "../firebase/firebase_auth";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 
@@ -43,9 +50,10 @@ const Register = ({ navigation }) => {
       <TouchableOpacity style={styles.button} onPress={() => handleRegister()}>
         <Text style={styles.buttonText}>Registrarse</Text>
       </TouchableOpacity>
-      <Pressable style={styles.loginPress} onPress={() => navigation.navigate("login")}>
-        <Text style={styles.registroText}>Ya tienes cuenta?</Text>
-        <Text style={styles.registroText}>Iniciar Sesión</Text>
+      <Pressable onPress={() => navigation.navigate("login")}>
+        <Text style={styles.registroText}>
+          Ya tienes cuenta? Iniciar Sesión
+        </Text>
       </Pressable>
     </View>
   );
@@ -57,10 +65,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  loginPress: {
-    justifyContent: "center",
-    alignItems: "center",
-  },
   title: {
     fontSize: 24,
     marginBottom: 20,
@@ -68,8 +72,7 @@ const styles = StyleSheet.create({
   input: {
     width: "85%",
     height: 50,
-    color: colors.orangeInputText,
-    borderColor: colors.blueInputLine,
+    borderColor: colors.pink,
     borderWidth: 2,
     borderRadius: 5,
     marginBottom: 20,
@@ -77,7 +80,7 @@ const styles = StyleSheet.create({
     fontSize: 17,
   },
   button: {
-    backgroundColor: colors.blueButto,
+    backgroundColor: colors.pink,
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,

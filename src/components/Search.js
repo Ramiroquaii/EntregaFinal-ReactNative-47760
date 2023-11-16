@@ -1,6 +1,6 @@
 import { View, Text, TextInput, StyleSheet, Pressable } from "react-native";
 import React, { useState } from "react";
-import { colors } from "../../assets/paletaColores";
+import { colors } from "../theme/colors";
 import { AntDesign } from "@expo/vector-icons";
 
 const Search = ({ text, setText }) => {

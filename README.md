@@ -5,8 +5,20 @@ Aplicacion React Native con Expo para dispositivos móviles multiplataforma.
 
 - Comision 47760
  **Profesor: Rocio Martin**
+
  **Tutor: German Koning**
+
  **Alumno: Ramiro Vechiola**
+
+>> No se desarrolla app personalizada, el curso fue de gran utilidad para conocer la metodología de desarrollo a través de la librería EXPO, la utilización e implementación de sus librerías propias, la adaptación de React a React Native para aplicaciones Móviles y por sobre todas las cosas el conjunto de herramientas que propone Expo Go para compilar y publicar el desarrollo.
+
+>>IMPORTANTE: no se profundizo lo suficiente en temas fundamentales como REDUX o la PUBICACIÓN FINAL de la aplicación, siendo estas partes de gran expectativa sobre el curso quedando estas de manera muy superficial.
+
+>>El curso me pareció de todos modos MUY ADECUADO y el dictado de clases fue muy aceptable, pero la carga horaria en temas fundamentales no fue suficiente desde mi punto de vista, la aplicación personal que pretendía desarrollar no fue posible de alcanzar debido a la incorporación de REDUX como sustitución de "CONTEXT".
+
+>>Les dejo como referencia la pequeña app REACT desarollada como ejemplo -> https://github.com/Ramiroquaii/ReactJS-Comision-38110.git
+
+>>Siendo esta la cual pretendia a modo dicactico traspasar a React Native pero al intentar inplementar REDUX no me fue posible aún, de todos modos continuo realizando pruebas y ejercitaciones hasta lograr el cometido final.
 
 > Aplicación desarollada en conjunto durante el curso que implemente todos los contenidos vistos. Esta aplicación no es de desarollo personal y simplemente se utiliza para entender y comprender la estructuración, modularización y uso de todas las librerias visatas a lo largo de la capacitación.
 

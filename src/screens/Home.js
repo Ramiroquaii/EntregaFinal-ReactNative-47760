@@ -1,8 +1,15 @@
-import { View, Text, SafeAreaView, FlatList, StyleSheet, ActivityIndicator } from "react-native";
+import {
+  View,
+  Text,
+  SafeAreaView,
+  FlatList,
+  StyleSheet,
+  ActivityIndicator,
+} from "react-native";
 import React from "react";
 import Header from "../components/Header";
 import CategoryItem from "../components/CategoryItem";
-import { colors } from "../../assets/paletaColores";
+import { colors } from "../theme/colors";
 import { useSelector } from "react-redux";
 import { useGetCategoriesQuery } from "../services/ecApi";
 

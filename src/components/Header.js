@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, Pressable } from "react-native";
 import React from "react";
-import { colors } from "../../assets/paletaColores";
+import { colors } from "../theme/colors";
 import { AntDesign } from "@expo/vector-icons";
 
 const Header = ({ title, navigation }) => {

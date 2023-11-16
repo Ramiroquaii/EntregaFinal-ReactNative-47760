@@ -1,8 +1,15 @@
-import { View, Text, Image, StyleSheet, SafeAreaView, Pressable } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  StyleSheet,
+  SafeAreaView,
+  Pressable,
+} from "react-native";
 import React from "react";
 import Header from "../components/Header";
 import { AntDesign } from "@expo/vector-icons";
-import { colors } from "../../assets/paletaColores";
+import { colors } from "../theme/colors";
 import { useSelector } from "react-redux";
 
 const ProductDetail = ({ navigation, route }) => {

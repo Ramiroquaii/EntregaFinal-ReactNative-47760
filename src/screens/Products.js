@@ -4,7 +4,7 @@ import Search from "../components/Search";
 import Header from "../components/Header";
 import ProductItem from "../components/ProductItem";
 import { AntDesign } from "@expo/vector-icons";
-import { colors } from "../../assets/paletaColores";
+import { colors } from "../theme/colors";
 import { useSelector } from "react-redux";
 
 import { useGetProductsQuery } from "../services/ecApi";

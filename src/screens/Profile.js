@@ -1,11 +1,19 @@
-import { Image, StyleSheet, Text, View, Pressable, ActivityIndicator, ScrollView } from "react-native";
+import {
+  Image,
+  StyleSheet,
+  Text,
+  View,
+  Pressable,
+  ActivityIndicator,
+  ScrollView,
+} from "react-native";
 import React, { useState } from "react";
 import Header from "../components/Header";
 import { Entypo } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
-import { colors } from "../../assets/paletaColores";
+import { colors } from "../theme/colors";
 import * as ImagePicker from "expo-image-picker";
 import { usePutImageMutation } from "../services/ecApi";
 import { useGetImageQuery } from "../services/ecApi";
@@ -19,7 +27,8 @@ const Profile = ({ navigation }) => {
 
   const { data, isLoading, error, isError, refetch } = useGetImageQuery();
 
-  const defaultImage = "https://img.freepik.com/premium-vector/woman-avatar-profile-round-icon_24640-14047.jpg?w=2000";
+  const defaultImage =
+    "https://img.freepik.com/premium-vector/woman-avatar-profile-round-icon_24640-14047.jpg?w=2000";
 
   const pickImage = async () => {
     let result = await ImagePicker.launchImageLibraryAsync({
